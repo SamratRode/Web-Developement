@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Madrid Football Club Fan Page Form</title>
+</head>
+<body>
+	<style>
+		body{
+			background-color:#98FB98;
+		}
+		header{
+			padding-top:20px;
+			padding-left:20px;
+			text-align:justify;
+			color:white;
+			background-color:red;
+			width:100%;
+			height:100px;
+		}
+		article {
+			width:70%;
+			background-color:blue;
+			border:black;
+			float:left;
+			margin:10px
+		}
+		article section{
+			padding-top:0px;
+			margin:10px;
+			font-size:18px;
+			color:white;
+		}
+		aside{
+			color:white;
+			float:right;
+			background-color:#FFD700;
+		}
+		
+		aside section{
+			float:left;
+			margin:10px;
+		}
+		aside section ul a{
+			text-decoration:none;
+			list-style:none;
+			color:white;
+			font-size:20px;
+		
+		}
+		aside section ul a:hover{
+			text-decoration:none;
+			list-style:none;
+			color:black;
+			font-size:30px;
+			
+		
+		}
+		aside section ul div:hover{
+			color:blue;
+			background-color:white;
+		}
+		footer{
+			width:100%;
+			height:100px;
+			clear:both;
+			color:grey;
+			background-color:black;
+			font-size:15px;
+			float:left;
+		}
+		nav{
+			width:100%;
+		}
+		nav ul{
+			list-style-type:none;
+			margin:0;
+			padding:0;
+			overflow:hidden;
+			background-color:black;
+		}
+		nav ul li{
+			float:left;
+		}
+		nav ul li a{
+			display:block;
+			color:red;
+			text-align:center;
+			padding:20px;
+			text-decoration:none;
+		}
+		nav ul li a:hover{
+			background-color:yellow;
+			font-weight:bold;
+		}
+		nav ul li ul{
+			display:none;
+			position:absolute;
+		}
+		nav ul li:hover ul
+		{
+			display:block;
+		}
+		nav ul li ul li{
+			clear:both;
+		}
+		#FORM p{
+			color:white;
+			text-decoration:underline;
+			text-align:center;
+		}
+		#FORM{
+			margin:auto;
+			text-align:center;
+			color:white;
+			
+		}
+		label{
+        font-weight: bold;
+    }
+    input:required, input:in-range{
+        background-color:white;
+    }
+    textarea:disabled{
+        background-color: beige;
+    }
+    input:focus{
+        background-color: white;
+    }
+    input:invalid{
+        background-color:red;
+    }
+    input:hover{
+        font-weight: bold;
+    }
+    button{
+        color: black;
+        font-weight: bolder;
+        padding: 5px 10px;
+        border: 1.7px solid black;
+        border-radius: 5px;
+        background-color:beige;
+    }
+			
+		
+		
+		
+	</style>
+	<header>
+    <img src="rmcf.png" width="70" style="float:left">
+	<h1>      </h1>
+    <h1>Real Madrid Football Club</h1>
+	</header>
+	
+	<nav>
+		<ul>
+			<li>
+				<a href="https://www.realmadrid.com/en">Official Site</a>
+			</li>
+			<li>
+				<a href="https://www.realmadrid.com/en/football/squad">Squad</a>
+			</li>
+			<li>
+				<a href="#">Top Players</a>
+				<ul>
+					<li>
+						<a href="https://www.instagram.com/cristiano/?hl=en">Cristian Ronaldo</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/ikercasillas/">Iker Casillas</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/davidbeckham/">David Beckham</a>
+					</li>
+				</ul>
+			</li>
+				
+		</ul>
+	</nav>
+
+    <br><br><br>
+    <article>
+		<div id = "FORM">
+			<p >FAN RECORDS REGISTRATION</p>
+			<form action="#" target="_blank" method="post" autocomplete=on>
+				<label for="fname">Fan name:</label><br><br>
+				<input type="text" id="fname" name="fname" required><br><br>
+				<label for="pnumber">Phone Number:</label><br><br>
+				<input type="tel" id="pnumber" name="pnumber" required ><br><br>
+			</form>
+			<p >Choose your favourite player</p>
+				<form action="#">
+				<input type="radio" id="ronaldo" name="fav_player" value="Ronaldo">
+				<label for="ronaldo">Cristiano Ronaldo</label><br>
+				<input type="radio" id="casillas" name="fav_player" value="Casillas">
+				<label for="casillas">Iker Casillas</label><br>
+				<input type="radio" id="beckham" name="fav_player" value="Beckham">
+				<label for="beckham">David Beckham</label><br><br>
+			<p>Which Jersey do you have?</p>
+				<form>
+					<input type="checkbox" id="jersey1" name="jersey1" value="07">
+					<label for="jersey1"> I have jersey number 7</label><br>
+					<input type="checkbox" id="jersey2" name="jersey2" value="01">
+					<label for="jersey2"> I have jersey number 1</label><br>
+					<input type="checkbox" id="jersey3" name="jersey3" value="23">
+					<label for="jersey3"> I have jersey number 23</label><br><br>
+				</form>
+			<p>Which Jersey color do you like?</p>
+				<form>
+					<label for="favcolor">Jersey color:  </label><br><br>
+					<input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br><br>
+					
+  
+				
+				</form>
+			
+				<form>
+					<label for="country">Choose your country:</label><br><br>
+					<select id="country" name="country">
+					<option value="india">India</option>
+					<option value="portugal">Portugal</option>
+					<option value="spain">Spain</option>
+					<option value="argentina">Argentina</option>
+					</select>
+				</form><br><br>
+				<p>Write a message to your team</p><br>
+				<form>
+					<textarea name="message" rows="10" cols="30">Help your team increase its morale</textarea>
+					<br><br>
+  
+				</form>
+				<form>
+					<label for="birthday">Enter your Birthday:</label><br><br>
+					<input type="date" id="birthday" name="birthday"><br><br>
+					<label for="excite">Your excitement for our next fixture (between 0 and 100):</label><br><br>
+					<input type="range" id="excite" name="excite" min="0" max="100"><br><br>
+					<label for="file">Attach the file</label><br>
+					<input type="file" id="file" name="upload file">
+					<br><br>
+  
+
+				</form><br>
+				<input type="submit" value="Submit"><br><br>
+			</form>
+			
+		
+		</div>
+    </article>
+    
+    <aside>
+		<section>
+        <h2>
+            Top Players
+        </h2>
+
+        <ul>
+		<div>
+            <a href="ronaldo.html">
+                <li>Cristiano Ronaldo</li>
+                <a href="ronaldo.jpg">
+                    <img src="ronaldo.jpg" width="300">
+                </a>
+            </a>
+         </div>
+		<div>
+            <a href="casillas.html">
+                <li>Iker Casillas</li>
+                <a href="casillas.jpg">
+                    <img src="casillas.jpg" width="300">
+                </a>
+            </a>
+		</div>
+		<div>
+            <a href="david.html">
+                <li>David Beckham</li>
+                <a href="beckham.jpg">
+                    <img src="beckham.jpg" width="300">
+                </a>
+            </a>
+		</div>
+        </ul>
+		</section>
+    </aside>
+	<br/><br/><br/>
+	<footer>
+		<p >Page made by Samrat Rode</p>
+		<br/><br/>
+		<p>Ma'am, I have submitted the previous assignment in a mail and on teams. Pls do check it.</p>
+	
+	</footer>
+
+</body>
+</html>
